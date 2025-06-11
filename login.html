@@ -52,7 +52,7 @@
     // Redirige al login completo de Google con correo/contraseña
     document.getElementById('google-full-login').addEventListener('click', function () {
       const clientId = '449615619408-p8b0rgriusolkp4ktfr8i2j1lqr3rkaf.apps.googleusercontent.com';
-      const redirectUri = 'https://tesh249.github.io/clevah/oauth2callback.html'; // DEBE coincidir con el configurado en Google
+      const redirectUri = 'https://tesh249.github.io/clevah/'; // DEBE coincidir con el configurado en Google
       const scope = 'email profile openid';
       const authUrl = `https://accounts.google.com/o/oauth2/v2/auth?response_type=token&client_id=${clientId}&redirect_uri=${redirectUri}&scope=${encodeURIComponent(scope)}&prompt=select_account`;
 
